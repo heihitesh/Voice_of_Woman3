@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:id="@+id/Linear"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/curve_shap_back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                android:id="@+id/bImage"
+                android:background="@drawable/crime" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Big"
+                android:id="@+id/Title"
+                android:text="Types Of Crime :"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/GridLayout">
+
+
+                <Button
+                    android:id="@+id/bfemalefeo"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_row="0"
+                    android:background="@drawable/onclick"
+                    android:text="FEMALE  FOETICIDE" />
+
+                <Button
+                    android:id="@+id/bdowry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:background="@drawable/onclick"
+                    android:text="dowry" />
+
+                <Button
+                    android:id="@+id/bAcid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/onclick"
+                    android:text="acid attacks" />
+
+                <Button
+                    android:id="@+id/bMolestation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_row="1"
+                    android:background="@drawable/onclick"
+                    android:text="molestation" />
+
+                <Button
+                    android:id="@+id/bEvetea"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:background="@drawable/onclick"
+                    android:text="Eve teasing" />
+            </GridLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:layout_marginLeft="10dp">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/onclick"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:id="@+id/bBack"
+                    android:visibility="visible"
+                    android:text="Back"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

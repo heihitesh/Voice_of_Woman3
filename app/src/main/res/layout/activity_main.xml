@@ -1,0 +1,499 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainId"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:background="@drawable/curve_shap_back"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curve_shap_back"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/onwronngclick"
+            android:text="Home"
+
+            android:textColor="#fffffce1"
+            android:textSize="18dp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/bCrimes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/onclick"
+            android:text="Crimes"
+            android:textColor="#fffffce1"
+            android:textSize="18dp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/bPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="5dp"
+            android:alpha="20"
+            android:background="@drawable/onclick"
+            android:text="Phone"
+            android:textColor="#fffffce1"
+            android:textSize="18dp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/bExtra"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/onclick"
+            android:text="Extra"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#fffffce1"
+            android:textSize="18dp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvuname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/onclick_green"
+                        android:gravity="center"
+                        android:text="Welcome:"
+                        android:textColor="#ffe5e5e5"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tvname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/onclick_green"
+                        android:gravity="right"
+                        android:text="Welcome:"
+                        android:textColor="#ffe5e5e5"
+                        android:textSize="15dp" />
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="10">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/curve_shap_back"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="VOW:"
+                                android:textColor="#ffffa2a5"
+                                android:textSize="25dp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="VOICE OF WOMEN"
+                                android:textColor="#ff6577ff"
+                                android:textSize="25dp"
+                                android:textStyle="bold|italic" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ViewFlipper
+                            android:id="@+id/viewFlipper"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/pic" />
+
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/pic_one" />
+
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/pic_two" />
+
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/woman" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/a" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/b" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/c" />
+
+                        </ViewFlipper>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/Big"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ABOUT" />
+
+                    <TextView
+                        android:id="@+id/tvAbout"
+                        style="@style/Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+                <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="400dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <ViewFlipper
+                                    android:id="@+id/view_flipper"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent">
+
+                                    <!--  The child Views/Layout to flip -->
+
+                                    <!--  Layout 1 for 1st Screen -->
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+
+                                        <ImageView
+
+                                            android:id="@+id/imageView1"
+                                            android:layout_width="350dp"
+                                            android:layout_height="350dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/a" />
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+
+                                        <ImageView
+
+                                            android:id="@+id/imageView1"
+                                            android:layout_width="350dp"
+                                            android:layout_height="350dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/b" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+
+                                        <ImageView
+
+                                            android:id="@+id/imageView1"
+                                            android:layout_width="350dp"
+                                            android:layout_height="350dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/c" />
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+
+                                        <ImageView
+
+                                            android:id="@+id/imageView1"
+                                            android:layout_width="350dp"
+                                            android:layout_height="350dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/pic" />
+
+                                    </LinearLayout>
+
+                                    <!--  Layout 2 for 2nd Screen -->
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+
+                                        <ImageView
+
+                                            android:id="@+id/imageView3"
+                                            android:layout_width="350dp"
+                                            android:layout_height="350dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/pic_one" />
+
+                                    </LinearLayout>
+                                    <!--  Layout 3 for 1st Screen -->
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+
+                                        <ImageView
+
+                                            android:id="@+id/imageView3"
+                                            android:layout_width="350dp"
+                                            android:layout_height="350dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/pic_two" />
+
+                                    </LinearLayout>
+                                    <!--  Layout 4 for 1st Screen -->
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+
+                                        <ImageView
+
+                                            android:id="@+id/imageView3"
+                                            android:layout_width="350dp"
+                                            android:layout_height="350dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/woman" />
+
+                                    </LinearLayout>
+
+
+                                </ViewFlipper>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <!-- THis will Flaot over the Image Flipper !-->
+
+
+                    <ImageView
+                        android:id="@+id/ivBack"
+                        android:layout_width="208dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="Back"
+                        android:textSize="30px"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ivFwd"
+                        android:layout_width="198dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="Next"
+                        android:textSize="30px"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="LOC"
+        android:background="@drawable/onclick_yellow"
+        android:textSize="15dp"
+        android:textColor="#ffecee41"
+        android:id="@+id/bWhere"
+        android:layout_marginBottom="2dp"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

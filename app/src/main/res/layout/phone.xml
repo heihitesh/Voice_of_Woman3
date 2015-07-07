@@ -1,0 +1,330 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ff4a4a4a"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="VOW:"
+            android:textColor="#ffffa2a5"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="VOICE OF WOMEN"
+            android:textColor="#ff6577ff"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ff595959"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="IMPORTANT "
+            android:textColor="#ffffa2a5"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            android:typeface="monospace" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="PHONE"
+            android:textColor="#ff6577ff"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+
+    </LinearLayout>
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:id="@+id/grid"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:columnWidth="100dp"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="5dp"
+                android:stretchMode="columnWidth" />
+
+        </LinearLayout>
+
+
+        <SlidingDrawer
+            android:id="@+id/slidingDrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:content="@+id/content"
+            android:handle="@+id/handle">
+
+
+            <Button
+                android:id="@+id/handle"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@drawable/call"/>
+
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvMummy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_row="0"
+                            android:text="Mummy"
+                            android:textColor="#fffcfef1"
+                            android:textSize="20dp" />
+
+                        <Button
+                            android:id="@+id/bPMummy"
+                            android:layout_width="58dp"
+                            android:layout_height="75dp"
+                            android:layout_column="1"
+                            android:layout_gravity="center"
+                            android:layout_row="0"
+                            android:layout_rowSpan="3"
+                            android:background="@drawable/phone"
+                            android:gravity="center" />
+
+                        <Button
+                            android:id="@+id/bMMummy"
+                            android:layout_width="53dp"
+                            android:layout_height="75dp"
+                            android:layout_column="2"
+                            android:layout_gravity="center"
+                            android:layout_row="0"
+                            android:layout_rowSpan="3"
+                            android:background="@drawable/sms"
+                            android:textStyle="bold|italic" />
+
+                        <EditText
+                            android:id="@+id/etMummy"
+                            android:layout_width="249dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_row="2"
+                            android:textColor="#fffcfef1"
+                            android:ems="10"
+                            android:hint="Please Enter Mobile No:"
+                            android:inputType="phone" />
+                    </GridLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="7dp"
+                        android:background="#c0c0c0" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvPapa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_row="0"
+                            android:text="Papa"
+                            android:textColor="#fffcfef1"
+                            android:textSize="20dp" />
+
+                        <Button
+                            android:id="@+id/bPPapa"
+                            android:layout_width="58dp"
+                            android:layout_height="75dp"
+                            android:layout_column="1"
+                            android:layout_gravity="center"
+                            android:layout_row="0"
+                            android:layout_rowSpan="3"
+                            android:background="@drawable/phone"
+                            android:gravity="center" />
+
+                        <Button
+                            android:id="@+id/bMPapa"
+                            android:layout_width="53dp"
+
+                            android:layout_height="75dp"
+                            android:layout_column="2"
+                            android:layout_gravity="center"
+                            android:layout_row="0"
+                            android:layout_rowSpan="3"
+                            android:background="@drawable/sms"
+                            android:textStyle="bold|italic" />
+
+                        <EditText
+                            android:id="@+id/etPapa"
+                            android:layout_width="249dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_row="2"
+                            android:ems="10"
+                            android:textColor="#fffcfef1"
+                            android:hint="Please Enter Mobile No:"
+                            android:inputType="phone" />
+                    </GridLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="7dp"
+                        android:background="#c0c0c0" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvOther"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_row="0"
+                            android:textColor="#fffcfef1"
+                            android:text="Other"
+                            android:textSize="20dp" />
+
+                        <Button
+                            android:id="@+id/bPOther"
+                            android:layout_width="58dp"
+                            android:layout_height="75dp"
+                            android:layout_column="1"
+                            android:layout_gravity="center"
+                            android:layout_row="0"
+                            android:layout_rowSpan="3"
+                            android:background="@drawable/phone"
+                            android:gravity="center" />
+
+                        <Button
+                            android:id="@+id/bMOther"
+                            android:layout_width="53dp"
+
+                            android:layout_height="75dp"
+                            android:layout_column="2"
+                            android:layout_gravity="center"
+                            android:layout_row="0"
+                            android:layout_rowSpan="3"
+                            android:background="@drawable/sms"
+                            android:textStyle="bold|italic" />
+
+                        <EditText
+                            android:id="@+id/etOther"
+                            android:layout_width="249dp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_row="2"
+                            android:ems="10"
+                            android:textColor="#fffcfef1"
+                            android:hint="Please Enter Mobile No:"
+                            android:inputType="phone" />
+                    </GridLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="7dp"
+                        android:background="#c0c0c0" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </SlidingDrawer>
+
+
+    </FrameLayout>
+</LinearLayout>

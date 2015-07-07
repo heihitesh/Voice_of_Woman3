@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+
+    <group android:checkableBehavior="single">
+        <!--For radio Buttons !-->
+        <item
+            android:id="@+id/menu_red"
+            android:orderInCategory="1"
+            app:showAsAction="never"
+            android:title="Pic One"
+            />
+        <item
+            android:id="@+id/menu_green"
+            android:orderInCategory="1"
+            app:showAsAction="never"
+            android:title="Pic Two"/>
+        <item
+            android:id="@+id/menu_yellow"
+            android:orderInCategory="1"
+            app:showAsAction="never"
+            android:title="Pic Third"/>
+
+        <item
+            android:id="@+id/menu_mypic"
+            android:orderInCategory="1"
+            app:showAsAction="never"
+            android:title="Black"/>
+
+
+
+    </group>
+
+</menu>

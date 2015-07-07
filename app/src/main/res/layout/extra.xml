@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/curve_shap_back"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/curve_shap_back"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="VOW:"
+                    android:textColor="#ffffa2a5"
+                    android:textSize="25dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="VOICE OF WOMEN"
+                    android:textColor="#ff6577ff"
+                    android:textSize="25dp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Big"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="VIDEOS"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crime Against Women"
+                android:id="@+id/bVideo1"
+                android:layout_row="0"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/onclick"
+                android:layout_column="0"
+                android:layout_columnSpan="2" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/onclick"
+                android:layout_gravity="center"
+                android:text="The Plight Of Women In India"
+                android:id="@+id/bVideo2"
+                android:layout_row="1"
+                android:layout_margin="5dp"
+                android:layout_column="0"
+                android:layout_columnSpan="2" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crime Against Women In India"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:id="@+id/bVideo3"
+                android:background="@drawable/onclick"
+                android:layout_row="2"
+                android:layout_column="1" />
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

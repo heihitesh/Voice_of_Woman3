@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/curve_shap_back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/hit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Name" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/curve_shap_blue"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp"
+            android:hint="Enter Here" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/hit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Email Address" />
+
+        <EditText
+            android:id="@+id/etEmailAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/curve_shap_blue"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp"
+            android:hint="Enter here:"
+            android:inputType="textEmailAddress" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/hit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   User Name" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Here "
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/curve_shap_blue"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp"
+     />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/hit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Password" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/curve_shap_blue"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp"
+            android:hint="******"
+           />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/hit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Confirm Password" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/curve_shap_blue"
+            android:layout_marginTop="5dp"
+           android:hint="******"
+            android:inputType="textPassword" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+        <Button
+            android:id="@+id/bSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/onclick"
+            android:text="Save" />
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
